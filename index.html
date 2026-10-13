@@ -28,29 +28,31 @@
         h2 { color: #764ba2; margin-bottom: 24px; font-size: 18px; font-weight: normal; }
         .info { background: #f8f9fa; border-radius: 8px; padding: 20px; margin: 16px 0; text-align: left; }
         .info p { margin: 8px 0; }
-        .nav-buttons {
+        .doc-links {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
             margin: 24px 0;
         }
-        .btn-link {
-            display: inline-block;
+        .btn-doc {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
             background: #667eea;
             color: white;
             text-decoration: none;
-            padding: 10px 18px;
+            padding: 9px 16px;
             border-radius: 20px;
             font-size: 14px;
             font-weight: 600;
             transition: all 0.25s ease;
-            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.25);
         }
-        .btn-link:hover {
+        .btn-doc:hover {
             background: #764ba2;
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(118, 75, 162, 0.4);
+            box-shadow: 0 6px 15px rgba(118, 75, 162, 0.35);
         }
         .footer { margin-top: 24px; font-size: 13px; color: #999; }
         .status { color: #38a169; font-weight: bold; }
@@ -70,13 +72,13 @@
             <p>🔄 <strong>Pipeline status:</strong> <span class="status">✅ Automated</span></p>
         </div>
 
-        <div class="nav-buttons">
-            <a href="html-css.html" class="btn-link">🌐 HTML5</a>
-            <a href="html-css.html" class="btn-link">🎨 CSS3</a>
-            <a href="git.html" class="btn-link">🐙 Git</a>
-            <a href="github-actions.html" class="btn-link">⚙️ GitHub Actions</a>
-            <a href="cicd-devops.html" class="btn-link">🔄 CI/CD</a>
-            <a href="cicd-devops.html" class="btn-link">🚀 DevOps</a>
+        <div class="doc-links">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer" class="btn-doc">🌐 HTML5 Docs</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer" class="btn-doc">🎨 CSS3 Docs</a>
+            <a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer" class="btn-doc">🐙 Git Docs</a>
+            <a href="https://docs.github.com/en/actions" target="_blank" rel="noopener noreferrer" class="btn-doc">⚙️ GitHub Actions Docs</a>
+            <a href="https://en.wikipedia.org/wiki/CI/CD" target="_blank" rel="noopener noreferrer" class="btn-doc">🔄 CI/CD Docs</a>
+            <a href="https://aws.amazon.com/devops/what-is-devops/" target="_blank" rel="noopener noreferrer" class="btn-doc">🚀 DevOps Docs</a>
         </div>
 
         <div class="footer">
