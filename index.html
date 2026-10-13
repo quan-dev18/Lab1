@@ -14,12 +14,13 @@
             justify-content: center;
             align-items: center;
             color: #333;
+            padding: 20px;
         }
         .container {
             background: white;
             border-radius: 16px;
             padding: 48px;
-            max-width: 600px;
+            max-width: 650px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             text-align: center;
         }
@@ -27,14 +28,29 @@
         h2 { color: #764ba2; margin-bottom: 24px; font-size: 18px; font-weight: normal; }
         .info { background: #f8f9fa; border-radius: 8px; padding: 20px; margin: 16px 0; text-align: left; }
         .info p { margin: 8px 0; }
-        .badge {
+        .nav-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 24px 0;
+        }
+        .btn-link {
             display: inline-block;
             background: #667eea;
             color: white;
-            padding: 6px 14px;
+            text-decoration: none;
+            padding: 10px 18px;
             border-radius: 20px;
             font-size: 14px;
-            margin: 4px;
+            font-weight: 600;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+        }
+        .btn-link:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(118, 75, 162, 0.4);
         }
         .footer { margin-top: 24px; font-size: 13px; color: #999; }
         .status { color: #38a169; font-weight: bold; }
@@ -54,13 +70,13 @@
             <p>🔄 <strong>Pipeline status:</strong> <span class="status">✅ Automated</span></p>
         </div>
 
-        <div>
-            <span class="badge">HTML5</span>
-            <span class="badge">CSS3</span>
-            <span class="badge">Git</span>
-            <span class="badge">GitHub Actions</span>
-            <span class="badge">CI/CD</span>
-            <span class="badge">DevOps</span>
+        <div class="nav-buttons">
+            <a href="html-css.html" class="btn-link">🌐 HTML5</a>
+            <a href="html-css.html" class="btn-link">🎨 CSS3</a>
+            <a href="git.html" class="btn-link">🐙 Git</a>
+            <a href="github-actions.html" class="btn-link">⚙️ GitHub Actions</a>
+            <a href="cicd-devops.html" class="btn-link">🔄 CI/CD</a>
+            <a href="cicd-devops.html" class="btn-link">🚀 DevOps</a>
         </div>
 
         <div class="footer">
@@ -74,4 +90,3 @@
     </script>
 </body>
 </html>
-

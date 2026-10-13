@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 & CSS3 — DevOps Lab 1</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e44d26 0%, #f16529 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 650px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 { color: #e44d26; margin-bottom: 12px; font-size: 28px; }
+        h2 { color: #555; margin-bottom: 24px; font-size: 16px; font-weight: normal; }
+        .content { background: #fdf5f2; border-radius: 10px; padding: 20px; text-align: left; margin-bottom: 24px; }
+        .content li { margin: 10px 0 10px 24px; line-height: 1.6; }
+        .nav-btn {
+            display: inline-block;
+            background: #e44d26;
+            color: white;
+            text-decoration: none;
+            padding: 10px 22px;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .nav-btn:hover { background: #c23814; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌐 HTML5 & CSS3 trong Web Tĩnh</h1>
+        <h2>Nền tảng giao diện cho bài thực hành DevOps Portfolio</h2>
+
+        <div class="content">
+            <p><strong>Khái niệm & Vai trò:</strong></p>
+            <ul>
+                <li><strong>HTML5:</strong> Xây dựng cấu trúc trang web chuẩn ngữ nghĩa (semantic structure).</li>
+                <li><strong>CSS3:</strong> Thiết kế giao diện hiện đại, responsive trên mọi thiết bị máy tính và điện thoại.</li>
+                <li><strong>Web tĩnh (Static Web):</strong> Không cần server backend hay cơ sở dữ liệu phức tạp, cực kỳ phù hợp để lưu trữ trên GitHub Pages với tốc độ tải trang nhanh và bảo mật cao.</li>
+            </ul>
+        </div>
+
+        <a href="index.html" class="nav-btn">← Quay lại trang chủ</a>
+    </div>
+</body>
+</html>
