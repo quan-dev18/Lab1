@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & Quản Lý Phiên Bản — DevOps Lab 1</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f05032 0%, #c4381d 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 650px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 { color: #f05032; margin-bottom: 12px; font-size: 28px; }
+        h2 { color: #555; margin-bottom: 24px; font-size: 16px; font-weight: normal; }
+        .content { background: #fdf3f1; border-radius: 10px; padding: 20px; text-align: left; margin-bottom: 24px; }
+        .content li { margin: 10px 0 10px 24px; line-height: 1.6; }
+        .code-block {
+            background: #2d3748;
+            color: #a0aec0;
+            padding: 12px;
+            border-radius: 8px;
+            font-family: Consolas, monospace;
+            font-size: 13px;
+            margin: 12px 0;
+            overflow-x: auto;
+        }
+        .code-block span { color: #68d391; }
+        .nav-btn {
+            display: inline-block;
+            background: #f05032;
+            color: white;
+            text-decoration: none;
+            padding: 10px 22px;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .nav-btn:hover { background: #d0371a; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐙 Git & Version Control</h1>
+        <h2>Hệ thống quản lý phiên bản phân tán (Distributed VCS)</h2>
+
+        <div class="content">
+            <p><strong>Lệnh Git thường dùng trong DevOps:</strong></p>
+            <div class="code-block">
+                <span>git init</span>: Khởi tạo repository cục bộ<br>
+                <span>git add .</span>: Đưa các tệp thay đổi vào Staging Area<br>
+                <span>git commit -m "..."</span>: Ghi nhận snapshot thay đổi vào lịch sử<br>
+                <span>git push origin main</span>: Đẩy mã nguồn lên kho từ xa để kích hoạt CI/CD
+            </div>
+            <ul>
+                <li><strong>Tracking:</strong> Theo dõi toàn bộ lịch sử thay đổi của từng dòng code.</li>
+                <li><strong>Branching:</strong> Phân nhánh linh hoạt (`main`, `gh-pages`, `feature/...`).</li>
+                <li><strong>Rollback:</strong> Dễ dàng quay lại trạng thái trước khi có lỗi bằng `git revert`.</li>
+            </ul>
+        </div>
+
+        <a href="index.html" class="nav-btn">← Quay lại trang chủ</a>
+    </div>
+</body>
+</html>
