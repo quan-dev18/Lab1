@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang Portfolio DevOps Lab 1 của sinh viên Tạ Như Quân - Trải nghiệm CI/CD Pipeline với GitHub Actions và GitHub Pages.">
     <title>DevOps Lab 1 — My Portfolio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #333;
+            color: #1a202c;
             padding: 20px;
         }
-        .container {
-            background: white;
+        main.container {
+            background: #ffffff;
             border-radius: 16px;
             padding: 48px;
             max-width: 650px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             text-align: center;
         }
-        h1 { color: #667eea; margin-bottom: 8px; font-size: 32px; }
-        h2 { color: #764ba2; margin-bottom: 24px; font-size: 18px; font-weight: normal; }
-        .info { background: #f8f9fa; border-radius: 8px; padding: 20px; margin: 16px 0; text-align: left; }
-        .info p { margin: 8px 0; }
+        h1 { color: #3c366b; margin-bottom: 8px; font-size: 32px; font-weight: 700; }
+        h2 { color: #44337a; margin-bottom: 24px; font-size: 18px; font-weight: 500; }
+        .info { background: #f7fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 16px 0; text-align: left; }
+        .info p { margin: 8px 0; color: #2d3748; }
+        .info strong { color: #1a202c; }
         .doc-links {
             display: flex;
             flex-wrap: wrap;
@@ -39,56 +41,51 @@
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            background: #667eea;
-            color: white;
+            background: #434190;
+            color: #ffffff;
             text-decoration: none;
-            padding: 9px 16px;
+            padding: 10px 18px;
             border-radius: 20px;
             font-size: 14px;
             font-weight: 600;
-            transition: all 0.25s ease;
-            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.25);
+            transition: background 0.2s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(67, 65, 144, 0.3);
         }
         .btn-doc:hover {
-            background: #764ba2;
+            background: #322659;
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(118, 75, 162, 0.35);
         }
-        .footer { margin-top: 24px; font-size: 13px; color: #999; }
-        .status { color: #38a169; font-weight: bold; }
+        footer.footer { margin-top: 24px; font-size: 13px; color: #4a5568; }
+        .status { color: #22543d; font-weight: 700; }
     </style>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <h1>👋 Hello, DevOps!</h1>
         <h2>Lab 1 — Trải nghiệm CI/CD Pipeline</h2>
 
-        <div class="info">
+        <section class="info" aria-label="Thông tin sinh viên và bài học">
             <p>👨‍🎓 <strong>Họ và tên:</strong> Tạ Như Quân</p>
             <p>🆔 <strong>Mã sinh viên:</strong> DTC235180154</p>
             <p>🎯 <strong>Bài học:</strong> DevOps Lab 1 — Tổng quan</p>
             <p>🚀 <strong>Deploy bởi:</strong> GitHub Actions CI/CD</p>
-            <p>📅 <strong>Ngày deploy:</strong> <span id="date"></span></p>
+            <p>📅 <strong>Ngày deploy:</strong> 2026-10-13</p>
             <p>🔄 <strong>Pipeline status:</strong> <span class="status">✅ Automated</span></p>
-        </div>
+        </section>
 
-        <div class="doc-links">
+        <nav class="doc-links" aria-label="Tài liệu tham khảo">
             <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer" class="btn-doc">🌐 HTML5 Docs</a>
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer" class="btn-doc">🎨 CSS3 Docs</a>
             <a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer" class="btn-doc">🐙 Git Docs</a>
             <a href="https://docs.github.com/en/actions" target="_blank" rel="noopener noreferrer" class="btn-doc">⚙️ GitHub Actions Docs</a>
             <a href="https://en.wikipedia.org/wiki/CI/CD" target="_blank" rel="noopener noreferrer" class="btn-doc">🔄 CI/CD Docs</a>
             <a href="https://aws.amazon.com/devops/what-is-devops/" target="_blank" rel="noopener noreferrer" class="btn-doc">🚀 DevOps Docs</a>
-        </div>
+        </nav>
 
-        <div class="footer">
+        <footer class="footer">
             <p>Deployed automatically via GitHub Actions Pipeline</p>
             <p>🔄 Push code → CI Build → Auto Deploy → Live! 🚀</p>
-        </div>
-    </div>
-
-    <script>
-        document.getElementById('date').textContent = new Date().toLocaleDateString('vi-VN');
-    </script>
+        </footer>
+    </main>
 </body>
 </html>
